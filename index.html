@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Kothari | Web Developer & UI/UX Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add AOS library for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background Canvas -->
+    <div class="background-wrapper">
+        <canvas id="animated-bg"></canvas>
+    </div>
+    
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="highlight">P</span>rince<span class="highlight">K</span>othari
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Theme Toggle Button -->
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" class="theme-switch">
+            <label for="theme-switch" class="theme-switch-label">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+            <h1 class="animate-text">Hi, I'm <span class="highlight">Prince Kothari</span></h1>
+            <div class="typing-text">
+                <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+            </div>
+            <p class="hero-desc">Creating visually stunning and intuitive digital experiences</p>
+            <div class="cta-buttons">
+                <a href="#portfolio" class="btn primary-btn glow-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Let's Connect</a>
+            </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+            <div class="profile-img">
+                <img src="https://github.com/princekotharii.png" alt="Prince Kothari">
+                <div class="profile-img-glow"></div>
+            </div>
+            <div class="floating-shapes">
+                <div class="shape shape1"></div>
+                <div class="shape shape2"></div>
+                <div class="shape shape3"></div>
+                <div class="shape shape4"></div>
+                <div class="shape shape5"></div>
+                <div class="shape shape6"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrows">
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header" data-aos="fade-up">
+            <h2>About <span class="highlight">Me</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+                <div class="profile-img animated-border">
+                    <img src="https://github.com/princekotharii.png" alt="Prince Kothari">
+                </div>
+            </div>
+            <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
+                <p>I'm a passionate <span class="highlight">Web Developer & UI/UX Designer</span> with a strong foundation in coding and a keen eye for design. I specialize in turning ideas into functional, responsive, and aesthetically pleasing digital solutions.</p>
+                
+                <div class="education">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <ul>
+                        <li><strong>Bachelor of Computer Applications (BCA)</strong><br>Motherhood University (2023 - 2026)</li>
+                        <li><strong>High School</strong><br>Shivalik Ganges Public School (Passed in 2022, PCM)</li>
+                    </ul>
+                </div>
+                
+                <div class="experience">
+                    <h3><i class="fas fa-briefcase"></i> Experience</h3>
+                    <ul>
+                        <li>Participated in hackathons, continuously learning and growing</li>
+                    </ul>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="mailto:princekothari029@gmail.com" class="social-icon" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                        <span class="social-tooltip">Email</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/princekothari" class="social-icon" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="social-tooltip">LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/princekotharii" class="social-icon" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span class="social-tooltip">GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-header" data-aos="fade-up">
+            <h2>My <span class="highlight">Skills</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category" data-aos="flip-left" data-aos-delay="100">
+                <div class="category-icon"><i class="fas fa-code"></i></div>
+                <h3>Web Development</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span>HTML5</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percent="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>CSS3</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percent="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percent="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>React</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percent="75"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category" data-aos="flip-left" data-aos-delay="300">
+                <div class="category-icon"><i class="fas fa-paint-brush"></i></div>
+                <h3>UI/UX Design</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span>Figma</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percent="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Adobe XD</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percent="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Photoshop</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percent="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Illustrator</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percent="65"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category" data-aos="flip-left" data-aos-delay="500">
+                <div class="category-icon"><i class="fas fa-cogs"></i></div>
+                <h3>Other Skills</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span>Responsive Design</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percent="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Version Control (Git)</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percent="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Problem Solving</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percent="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Team Collaboration</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percent="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="section-header" data-aos="fade-up">
+            <h2>My <span class="highlight">Projects</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="portfolio-filter" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="ui">UI/UX Design</button>
+            <button class="filter-btn" data-filter="hackathon">Hackathons</button>
+        </div>
+        <div class="portfolio-grid">
+            <!-- Portfolio Item 1 -->
+            <div class="portfolio-item web" data-aos="zoom-in" data-aos-delay="100">
+                <div class="portfolio-img">
+                    <img src="https://via.placeholder.com/500x350" alt="Project 1">
+                </div>
+                <div class="portfolio-info">
+                    <h3>E-commerce Website</h3>
+                    <p>A modern e-commerce platform with advanced user interface</p>
+                    <div class="portfolio-links">
+                        <a href="#" class="bounce-hover"><i class="fas fa-link"></i></a>
+                        <a href="#" class="bounce-hover"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 2 -->
+            <div class="portfolio-item ui" data-aos="zoom-in" data-aos-delay="200">
+                <div class="portfolio-img">
+                    <img src="https://via.placeholder.com/500x350" alt="Project 2">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Mobile App Design</h3>
+                    <p>UI/UX design for a fitness tracking mobile application</p>
+                    <div class="portfolio-links">
+                        <a href="#" class="bounce-hover"><i class="fas fa-link"></i></a>
+                        <a href="#" class="bounce-hover"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 3 -->
+            <div class="portfolio-item hackathon" data-aos="zoom-in" data-aos-delay="300">
+                <div class="portfolio-img">
+                    <img src="https://via.placeholder.com/500x350" alt="Project 3">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Hackathon Project</h3>
+                    <p>A solution developed during a 48-hour coding challenge</p>
+                    <div class="portfolio-links">
+                        <a href="#" class="bounce-hover"><i class="fas fa-link"></i></a>
+                        <a href="#" class="bounce-hover"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 4 -->
+            <div class="portfolio-item web" data-aos="zoom-in" data-aos-delay="400">
+                <div class="portfolio-img">
+                    <img src="https://via.placeholder.com/500x350" alt="Project 4">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive portfolio website with modern animations</p>
+                    <div class="portfolio-links">
+                        <a href="#" class="bounce-hover"><i class="fas fa-link"></i></a>
+                        <a href="#" class="bounce-hover"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 5 -->
+            <div class="portfolio-item ui" data-aos="zoom-in" data-aos-delay="500">
+                <div class="portfolio-img">
+                    <img src="https://via.placeholder.com/500x350" alt="Project 5">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Dashboard Design</h3>
+                    <p>An intuitive admin dashboard with data visualization</p>
+                    <div class="portfolio-links">
+                        <a href="#" class="bounce-hover"><i class="fas fa-link"></i></a>
+                        <a href="#" class="bounce-hover"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 6 -->
+            <div class="portfolio-item hackathon" data-aos="zoom-in" data-aos-delay="600">
+                <div class="portfolio-img">
+                    <img src="https://via.placeholder.com/500x350" alt="Project 6">
+                </div>
+                <div class="portfolio-info">
+                    <h3>AI Project</h3>
+                    <p>A machine learning project from a recent hackathon</p>
+                    <div class="portfolio-links">
+                        <a href="#" class="bounce-hover"><i class="fas fa-link"></i></a>
+                        <a href="#" class="bounce-hover"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Get In <span class="highlight">Touch</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right" data-aos-duration="1000">
+                <div class="contact-item">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:princekothari029@gmail.com">princekothari029@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><i class="fab fa-linkedin"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/princekothari" target="_blank">linkedin.com/in/princekothari</a></p>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><i class="fab fa-github"></i></div>
+                    <h3>GitHub</h3>
+                    <p><a href="https://github.com/princekotharii" target="_blank">github.com/princekotharii</a></p>
+                </div>
+            </div>
+            <div class="contact-form" data-aos="fade-left" data-aos-duration="1000">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn glow-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="highlight">P</span>rince<span class="highlight">K</span>othari
+            </div>
+            <div class="footer-social">
+                <a href="mailto:princekothari029@gmail.com" class="social-icon" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/princekothari" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/princekotharii" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Prince Kothari. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
